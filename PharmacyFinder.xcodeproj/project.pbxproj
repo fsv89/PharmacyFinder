@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,11 @@
 		691CF2942450ED4C003C97FE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691CF2922450ED4C003C97FE /* LoginViewController.swift */; };
 		691CF2952450ED4C003C97FE /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 691CF2932450ED4C003C97FE /* LoginViewController.xib */; };
 		691CF2992450EEFC003C97FE /* Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691CF2982450EEFC003C97FE /* Contract.swift */; };
+		691CF2A92451046F003C97FE /* RegistrationContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691CF2A62451046F003C97FE /* RegistrationContract.swift */; };
+		691CF2AA2451046F003C97FE /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691CF2A72451046F003C97FE /* RegistrationPresenter.swift */; };
+		691CF2AE24510494003C97FE /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691CF2AC24510494003C97FE /* RegistrationViewController.swift */; };
+		691CF2AF24510494003C97FE /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 691CF2AD24510494003C97FE /* RegistrationViewController.xib */; };
+		691CF2B2245105CB003C97FE /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691CF2B1245105CB003C97FE /* StringConstants.swift */; };
 		C7D6338643B51BF9C73F7CF9 /* Pods_PharmacyFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CEE4D5683F4153BAC753FF /* Pods_PharmacyFinder.framework */; };
 		D1E7223E1A63C5BAF66AD7C4 /* Pods_PharmacyFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAB94F5D11969C1FA30FE85 /* Pods_PharmacyFinderTests.framework */; };
 /* End PBXBuildFile section */
@@ -47,6 +52,11 @@
 		691CF2922450ED4C003C97FE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		691CF2932450ED4C003C97FE /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		691CF2982450EEFC003C97FE /* Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contract.swift; sourceTree = "<group>"; };
+		691CF2A62451046F003C97FE /* RegistrationContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationContract.swift; sourceTree = "<group>"; };
+		691CF2A72451046F003C97FE /* RegistrationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPresenter.swift; sourceTree = "<group>"; };
+		691CF2AC24510494003C97FE /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		691CF2AD24510494003C97FE /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
+		691CF2B1245105CB003C97FE /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
 		6CDFEFB5D719B471EA5EBD9E /* Pods-PharmacyFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmacyFinder.release.xcconfig"; path = "Target Support Files/Pods-PharmacyFinder/Pods-PharmacyFinder.release.xcconfig"; sourceTree = "<group>"; };
 		7492093F9F00DD5B13D7A726 /* Pods-PharmacyFinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmacyFinderTests.debug.xcconfig"; path = "Target Support Files/Pods-PharmacyFinderTests/Pods-PharmacyFinderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A75187869DDCEE322717145E /* Pods-PharmacyFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmacyFinder.debug.xcconfig"; path = "Target Support Files/Pods-PharmacyFinder/Pods-PharmacyFinder.debug.xcconfig"; sourceTree = "<group>"; };
@@ -91,7 +101,6 @@
 				7492093F9F00DD5B13D7A726 /* Pods-PharmacyFinderTests.debug.xcconfig */,
 				FC5784AE240B26FFA004FDBC /* Pods-PharmacyFinderTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -119,7 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				691CF2962450EED3003C97FE /* Core */,
-				691CF28A2450ECD9003C97FE /* Scenes */,
+				691CF29D2450F83A003C97FE /* Modules */,
 				691CF2682450ECBB003C97FE /* AppDelegate.swift */,
 				691CF26A2450ECBB003C97FE /* SceneDelegate.swift */,
 				691CF2712450ECBF003C97FE /* Assets.xcassets */,
@@ -142,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				691CF28B2450ECEA003C97FE /* Login */,
+				691CF29F2450F8AD003C97FE /* Registration */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -162,6 +172,7 @@
 			children = (
 				691CF29A2450EF75003C97FE /* Extensions */,
 				691CF2972450EEDC003C97FE /* BaseModule */,
+				691CF2B024510577003C97FE /* Strings */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -179,6 +190,41 @@
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		691CF29D2450F83A003C97FE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				691CF29E2450F844003C97FE /* Account */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		691CF29E2450F844003C97FE /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				691CF28A2450ECD9003C97FE /* Scenes */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		691CF29F2450F8AD003C97FE /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				691CF2A62451046F003C97FE /* RegistrationContract.swift */,
+				691CF2A72451046F003C97FE /* RegistrationPresenter.swift */,
+				691CF2AC24510494003C97FE /* RegistrationViewController.swift */,
+				691CF2AD24510494003C97FE /* RegistrationViewController.xib */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		691CF2B024510577003C97FE /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				691CF2B1245105CB003C97FE /* StringConstants.swift */,
+			);
+			path = Strings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				691CF2952450ED4C003C97FE /* LoginViewController.xib in Resources */,
+				691CF2AF24510494003C97FE /* RegistrationViewController.xib in Resources */,
 				691CF2752450ECBF003C97FE /* LaunchScreen.storyboard in Resources */,
 				691CF2722450ECBF003C97FE /* Assets.xcassets in Resources */,
 			);
@@ -350,10 +397,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				691CF2942450ED4C003C97FE /* LoginViewController.swift in Sources */,
+				691CF2AA2451046F003C97FE /* RegistrationPresenter.swift in Sources */,
+				691CF2A92451046F003C97FE /* RegistrationContract.swift in Sources */,
+				691CF2AE24510494003C97FE /* RegistrationViewController.swift in Sources */,
 				691CF28F2450ED04003C97FE /* LoginContract.swift in Sources */,
 				691CF2692450ECBB003C97FE /* AppDelegate.swift in Sources */,
 				691CF2992450EEFC003C97FE /* Contract.swift in Sources */,
 				691CF26B2450ECBB003C97FE /* SceneDelegate.swift in Sources */,
+				691CF2B2245105CB003C97FE /* StringConstants.swift in Sources */,
 				691CF2902450ED04003C97FE /* LoginPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -20,10 +20,22 @@ class LoginViewController: UIViewController {
         presenter = LoginPresenter(view: self)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.presenter?.doSomething()
     }
+    
+    
+    @IBAction func onPressSignUp(_ sender: UIButton) {
+        let destination = RegistrationViewController()
+        self.navigationController?.pushViewController(destination, animated: true)
+    }
+    
 }
 
 extension LoginViewController: LoginContract.View {
