@@ -17,6 +17,8 @@
 		691CF2942450ED4C003C97FE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691CF2922450ED4C003C97FE /* LoginViewController.swift */; };
 		691CF2952450ED4C003C97FE /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 691CF2932450ED4C003C97FE /* LoginViewController.xib */; };
 		691CF2992450EEFC003C97FE /* Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691CF2982450EEFC003C97FE /* Contract.swift */; };
+		C7D6338643B51BF9C73F7CF9 /* Pods_PharmacyFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CEE4D5683F4153BAC753FF /* Pods_PharmacyFinder.framework */; };
+		D1E7223E1A63C5BAF66AD7C4 /* Pods_PharmacyFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAB94F5D11969C1FA30FE85 /* Pods_PharmacyFinderTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4EAB94F5D11969C1FA30FE85 /* Pods_PharmacyFinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PharmacyFinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		691CF2652450ECBB003C97FE /* PharmacyFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PharmacyFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		691CF2682450ECBB003C97FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		691CF26A2450ECBB003C97FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +47,11 @@
 		691CF2922450ED4C003C97FE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		691CF2932450ED4C003C97FE /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		691CF2982450EEFC003C97FE /* Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contract.swift; sourceTree = "<group>"; };
+		6CDFEFB5D719B471EA5EBD9E /* Pods-PharmacyFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmacyFinder.release.xcconfig"; path = "Target Support Files/Pods-PharmacyFinder/Pods-PharmacyFinder.release.xcconfig"; sourceTree = "<group>"; };
+		7492093F9F00DD5B13D7A726 /* Pods-PharmacyFinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmacyFinderTests.debug.xcconfig"; path = "Target Support Files/Pods-PharmacyFinderTests/Pods-PharmacyFinderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A75187869DDCEE322717145E /* Pods-PharmacyFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmacyFinder.debug.xcconfig"; path = "Target Support Files/Pods-PharmacyFinder/Pods-PharmacyFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		B5CEE4D5683F4153BAC753FF /* Pods_PharmacyFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PharmacyFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC5784AE240B26FFA004FDBC /* Pods-PharmacyFinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmacyFinderTests.release.xcconfig"; path = "Target Support Files/Pods-PharmacyFinderTests/Pods-PharmacyFinderTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D6338643B51BF9C73F7CF9 /* Pods_PharmacyFinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,18 +67,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1E7223E1A63C5BAF66AD7C4 /* Pods_PharmacyFinderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		269F5E3B61D1D488F5797D94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5CEE4D5683F4153BAC753FF /* Pods_PharmacyFinder.framework */,
+				4EAB94F5D11969C1FA30FE85 /* Pods_PharmacyFinderTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		671D1A5CC6C6A3BF8005EB84 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A75187869DDCEE322717145E /* Pods-PharmacyFinder.debug.xcconfig */,
+				6CDFEFB5D719B471EA5EBD9E /* Pods-PharmacyFinder.release.xcconfig */,
+				7492093F9F00DD5B13D7A726 /* Pods-PharmacyFinderTests.debug.xcconfig */,
+				FC5784AE240B26FFA004FDBC /* Pods-PharmacyFinderTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		691CF25C2450ECBA003C97FE = {
 			isa = PBXGroup;
 			children = (
 				691CF2672450ECBB003C97FE /* PharmacyFinder */,
 				691CF27E2450ECBF003C97FE /* PharmacyFinderTests */,
 				691CF2662450ECBB003C97FE /* Products */,
+				671D1A5CC6C6A3BF8005EB84 /* Pods */,
+				269F5E3B61D1D488F5797D94 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 691CF2842450ECBF003C97FE /* Build configuration list for PBXNativeTarget "PharmacyFinder" */;
 			buildPhases = (
+				31305BF4DC43FE09C137A7D4 /* [CP] Check Pods Manifest.lock */,
 				691CF2612450ECBA003C97FE /* Sources */,
 				691CF2622450ECBA003C97FE /* Frameworks */,
 				691CF2632450ECBA003C97FE /* Resources */,
+				86F897ED7C7C63FB014CA428 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -172,6 +207,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 691CF2872450ECBF003C97FE /* Build configuration list for PBXNativeTarget "PharmacyFinderTests" */;
 			buildPhases = (
+				D87A6E36965A185622233FF9 /* [CP] Check Pods Manifest.lock */,
 				691CF2772450ECBF003C97FE /* Sources */,
 				691CF2782450ECBF003C97FE /* Frameworks */,
 				691CF2792450ECBF003C97FE /* Resources */,
@@ -243,6 +279,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31305BF4DC43FE09C137A7D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PharmacyFinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86F897ED7C7C63FB014CA428 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PharmacyFinder/Pods-PharmacyFinder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PharmacyFinder/Pods-PharmacyFinder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PharmacyFinder/Pods-PharmacyFinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D87A6E36965A185622233FF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PharmacyFinderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		691CF2612450ECBA003C97FE /* Sources */ = {
@@ -338,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -392,7 +492,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -404,6 +504,7 @@
 		};
 		691CF2852450ECBF003C97FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A75187869DDCEE322717145E /* Pods-PharmacyFinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -421,6 +522,7 @@
 		};
 		691CF2862450ECBF003C97FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CDFEFB5D719B471EA5EBD9E /* Pods-PharmacyFinder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,12 +540,13 @@
 		};
 		691CF2882450ECBF003C97FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7492093F9F00DD5B13D7A726 /* Pods-PharmacyFinderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PharmacyFinderTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,12 +562,13 @@
 		};
 		691CF2892450ECBF003C97FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC5784AE240B26FFA004FDBC /* Pods-PharmacyFinderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PharmacyFinderTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -1,0 +1,6 @@
+framework module Pods_PharmacyFinderTests {
+  umbrella header "Pods-PharmacyFinderTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
