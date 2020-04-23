@@ -9,11 +9,11 @@
 import UIKit
 
 protocol RegistrationPresenterProtocol: class {
-    func doSomething()
+    func doRegisterUserAccount(userAccount: UserAccount)
 }
 
 protocol RegistrationViewProtocol: class {
-    func displaySomething()
+    func displayLoginViewController()
 }
 
 class RegistrationContract: Contract {

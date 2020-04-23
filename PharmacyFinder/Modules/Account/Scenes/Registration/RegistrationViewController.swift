@@ -10,6 +10,10 @@ import UIKit
 
 
 class RegistrationViewController: UIViewController {
+    
+    @IBOutlet weak var textFieldUsername: UITextField!
+    @IBOutlet weak var textFieldPassword: UITextField!
+    
     var presenter: RegistrationContract.Presenter?
     
     convenience init() {
@@ -23,7 +27,6 @@ class RegistrationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.presenter?.doSomething()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -31,10 +34,16 @@ class RegistrationViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden = false
         self.navigationItem.title = StringConstants.REGISTRATION_TITLE
     }
+    
+    @IBAction func onPressSignUp(_ sender: UIButton) {
+        let userAccount = UserAccount(username: self.textFieldUsername.text ?? "",
+                                      password: self.textFieldPassword.text ?? "")
+        self.presenter?.doRegisterUserAccount(userAccount: userAccount)
+    }
 }
 
 extension RegistrationViewController: RegistrationContract.View {
-    func displaySomething() {
-        // do something
+    func displayLoginViewController() {
+        self.navigationController?.popViewController(animated: true)
     }
 }

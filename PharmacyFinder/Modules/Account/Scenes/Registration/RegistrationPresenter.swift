@@ -9,18 +9,17 @@
 import UIKit
 
 class RegistrationPresenter: RegistrationContract.Presenter {
+    
     weak var view: RegistrationContract.View?
+    var registerWithUsernameUseCase = RegisterWithUsernameUseCase()
     
     init(view: RegistrationContract.View) {
         self.view = view
     }
-
-    func doSomething() {
-        /*
-            ...
-            presentation logic
-            ...
-        */
-        self.view?.displaySomething()
+    
+    func doRegisterUserAccount(userAccount: UserAccount) {
+        self.registerWithUsernameUseCase.addParameters(parameters: userAccount)
+        self.registerWithUsernameUseCase.execute()
+        self.view?.displayLoginViewController()
     }
 }

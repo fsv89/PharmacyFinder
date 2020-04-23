@@ -4,6 +4,7 @@ target 'PharmacyFinder' do
   use_frameworks!
 
   pod 'Alamofire'
+  pod 'Locksmith'
 
   # Pods for PharmacyFinder
 
