@@ -9,11 +9,12 @@
 import UIKit
 
 protocol LoginPresenterProtocol: class {
-    func doSomething()
+    func doLoginWithUsername(userAccount: UserAccount)
 }
 
 protocol LoginViewProtocol: class {
-    func displaySomething()
+    func displayLoginError(alertController: UIAlertController)
+    func doPushViewController()
 }
 
 class LoginContract: Contract {

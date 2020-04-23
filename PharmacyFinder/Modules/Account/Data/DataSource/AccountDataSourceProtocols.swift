@@ -8,6 +8,7 @@
 
 protocol AccountLocalDataSourceProtocol: class {
     func registerUserAccount(userAccount: UserAccount)
+    func getUserAccount() -> UserAccount?
 }
 
 protocol AccountRemoteDataSourceProtocol: class {

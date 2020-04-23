@@ -10,4 +10,6 @@ import Foundation
 
 public class StringConstants {
     static var REGISTRATION_TITLE = NSLocalizedString("Registration", comment: "")
+    static var ALERT_OK_BUTTON = NSLocalizedString("OK", comment: "")
+    static var ALERT_LOGIN_ERROR = NSLocalizedString("The login that you entered doesn't match any account. Sign up for an account.", comment: "")
 }

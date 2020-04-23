@@ -30,6 +30,7 @@
 		691CF2C62451EC19003C97FE /* AccountRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691CF2C52451EC19003C97FE /* AccountRepository.swift */; };
 		691CF2C92451ECD8003C97FE /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691CF2C82451ECD8003C97FE /* UseCase.swift */; };
 		691CF2CF2451EDF3003C97FE /* RegisterWithUsernameUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691CF2CE2451EDF3003C97FE /* RegisterWithUsernameUseCase.swift */; };
+		691CF2D12451FEFE003C97FE /* LoginWithUsernameUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691CF2D02451FEFE003C97FE /* LoginWithUsernameUseCase.swift */; };
 		C7D6338643B51BF9C73F7CF9 /* Pods_PharmacyFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CEE4D5683F4153BAC753FF /* Pods_PharmacyFinder.framework */; };
 		D1E7223E1A63C5BAF66AD7C4 /* Pods_PharmacyFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAB94F5D11969C1FA30FE85 /* Pods_PharmacyFinderTests.framework */; };
 /* End PBXBuildFile section */
@@ -74,6 +75,7 @@
 		691CF2C52451EC19003C97FE /* AccountRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRepository.swift; sourceTree = "<group>"; };
 		691CF2C82451ECD8003C97FE /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
 		691CF2CE2451EDF3003C97FE /* RegisterWithUsernameUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWithUsernameUseCase.swift; sourceTree = "<group>"; };
+		691CF2D02451FEFE003C97FE /* LoginWithUsernameUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithUsernameUseCase.swift; sourceTree = "<group>"; };
 		6CDFEFB5D719B471EA5EBD9E /* Pods-PharmacyFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmacyFinder.release.xcconfig"; path = "Target Support Files/Pods-PharmacyFinder/Pods-PharmacyFinder.release.xcconfig"; sourceTree = "<group>"; };
 		7492093F9F00DD5B13D7A726 /* Pods-PharmacyFinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmacyFinderTests.debug.xcconfig"; path = "Target Support Files/Pods-PharmacyFinderTests/Pods-PharmacyFinderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A75187869DDCEE322717145E /* Pods-PharmacyFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmacyFinder.debug.xcconfig"; path = "Target Support Files/Pods-PharmacyFinder/Pods-PharmacyFinder.debug.xcconfig"; sourceTree = "<group>"; };
@@ -337,6 +339,7 @@
 		691CF2CC2451ED88003C97FE /* LoginUseCases */ = {
 			isa = PBXGroup;
 			children = (
+				691CF2D02451FEFE003C97FE /* LoginWithUsernameUseCase.swift */,
 			);
 			path = LoginUseCases;
 			sourceTree = "<group>";
@@ -530,6 +533,7 @@
 				691CF2B82451E089003C97FE /* AccountDataSourceProtocols.swift in Sources */,
 				691CF2BD2451E39B003C97FE /* StorageProtocol.swift in Sources */,
 				691CF2992450EEFC003C97FE /* Contract.swift in Sources */,
+				691CF2D12451FEFE003C97FE /* LoginWithUsernameUseCase.swift in Sources */,
 				691CF26B2450ECBB003C97FE /* SceneDelegate.swift in Sources */,
 				691CF2C02451E7FA003C97FE /* StorageKeyChain.swift in Sources */,
 				691CF2B2245105CB003C97FE /* StringConstants.swift in Sources */,

@@ -9,6 +9,10 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    
+    @IBOutlet weak var texFieldUsername: UITextField!
+    @IBOutlet weak var textFieldPassword: UITextField!
+    
     var presenter: LoginContract.Presenter?
     
     convenience init() {
@@ -27,7 +31,6 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.presenter?.doSomething()
     }
     
     
@@ -36,11 +39,20 @@ class LoginViewController: UIViewController {
         self.navigationController?.pushViewController(destination, animated: true)
     }
     
-}
-
-extension LoginViewController: LoginContract.View {
-    func displaySomething() {
-        // do something
+    @IBAction func onPressSignIn(_ sender: UIButton) {
+        let userAccount = UserAccount(username: self.texFieldUsername.text ?? "",
+                                      password: self.textFieldPassword.text ?? "")
+        self.presenter?.doLoginWithUsername(userAccount: userAccount)
     }
 }
 
+extension LoginViewController: LoginContract.View {
+    func doPushViewController() {
+        let destination = UIViewController()
+        self.navigationController?.pushViewController(destination, animated: true)
+    }
+    
+    func displayLoginError(alertController: UIAlertController) {
+        self.present(alertController, animated: true, completion: nil)
+    }
+}

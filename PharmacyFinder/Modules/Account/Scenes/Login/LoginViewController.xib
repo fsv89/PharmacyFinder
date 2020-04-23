@@ -9,6 +9,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="PharmacyFinder" customModuleProvider="target">
             <connections>
+                <outlet property="texFieldUsername" destination="1LC-0X-EvA" id="dDq-mk-Fkl"/>
+                <outlet property="textFieldPassword" destination="TaN-fr-ZKk" id="2yd-cI-wLi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -45,6 +47,9 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="onPressSignIn:" destination="-1" eventType="touchUpInside" id="989-RL-FgC"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pharmacy Finder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpt-df-Ijf">
                     <rect key="frame" x="83" y="128" width="249" height="40"/>

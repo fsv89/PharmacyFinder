@@ -25,4 +25,9 @@ class AccountRepository: AccountRepositoryProtocol {
     func registerUserAccount(userAccount: UserAccount) {
         self.local.registerUserAccount(userAccount: userAccount)
     }
+    
+    func getUserAccount() -> UserAccount? {
+        return self.local.getUserAccount()
+    }
+    
 }

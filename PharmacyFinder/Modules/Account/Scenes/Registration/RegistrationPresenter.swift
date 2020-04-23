@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegistrationPresenter: RegistrationContract.Presenter {
+class RegistrationPresenter {
     
     weak var view: RegistrationContract.View?
     var registerWithUsernameUseCase = RegisterWithUsernameUseCase()
@@ -16,7 +16,9 @@ class RegistrationPresenter: RegistrationContract.Presenter {
     init(view: RegistrationContract.View) {
         self.view = view
     }
-    
+}
+
+extension RegistrationPresenter: RegistrationContract.Presenter {
     func doRegisterUserAccount(userAccount: UserAccount) {
         self.registerWithUsernameUseCase.addParameters(parameters: userAccount)
         self.registerWithUsernameUseCase.execute()
