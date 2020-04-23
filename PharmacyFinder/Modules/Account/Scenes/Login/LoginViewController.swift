@@ -48,7 +48,7 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: LoginContract.View {
     func doPushViewController() {
-        let destination = UIViewController()
+        let destination = HomeViewController()
         self.navigationController?.pushViewController(destination, animated: true)
     }
     
