@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="PharmacyCell" customModule="PharmacyFinder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="X20-EK-5fZ">
+                        <rect key="frame" x="207" y="12" width="147.5" height="36"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OHIGGINS 195, LOCAL 1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8YB-D1-UgG">
+                                <rect key="frame" x="0.0" y="0.0" width="147.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUILLOTA" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbc-5o-zVy">
+                                <rect key="frame" x="0.0" y="20" width="147.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CRUZ VERDE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="StZ-IG-PxU">
+                        <rect key="frame" x="20" y="20" width="122" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="X20-EK-5fZ" secondAttribute="trailing" constant="20.5" id="SfN-uO-APC"/>
+                    <constraint firstAttribute="bottom" secondItem="StZ-IG-PxU" secondAttribute="bottom" constant="19" id="aFe-ZR-cc0"/>
+                    <constraint firstItem="StZ-IG-PxU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="hpC-7U-hTM"/>
+                    <constraint firstAttribute="bottom" secondItem="X20-EK-5fZ" secondAttribute="bottom" constant="12" id="imC-uI-svD"/>
+                    <constraint firstItem="StZ-IG-PxU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="mH8-ZC-Fzn"/>
+                    <constraint firstItem="X20-EK-5fZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="rJn-J5-Lld"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="labelCompanyAddress" destination="8YB-D1-UgG" id="SkR-Tl-amV"/>
+                <outlet property="labelCompanyDistrict" destination="cbc-5o-zVy" id="O9A-HY-Uej"/>
+                <outlet property="labelCompanyName" destination="StZ-IG-PxU" id="gJY-m4-Gym"/>
+            </connections>
+            <point key="canvasLocation" x="-26.811594202898554" y="124.55357142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

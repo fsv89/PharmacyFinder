@@ -9,11 +9,12 @@
 import UIKit
 
 protocol HomePresenterProtocol: class {
-    func doSomething()
+    func doLoadPharmacies()
 }
 
 protocol HomeViewProtocol: class {
-    func displaySomething()
+    func displayPopulatedTableView(pharmacies: PharmacyResponse)
+    func displayDataError(alertController: UIAlertController)
 }
 
 class HomeContract: Contract {

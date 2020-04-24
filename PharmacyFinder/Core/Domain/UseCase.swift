@@ -7,6 +7,10 @@
 //
 import Foundation
 
+struct DefaultFailure {
+    var message: String
+}
+
 protocol UseCase {
     associatedtype RequestType
     associatedtype SuccessResponseType
