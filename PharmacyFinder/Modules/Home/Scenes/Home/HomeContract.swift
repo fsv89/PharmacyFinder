@@ -17,6 +17,7 @@ protocol HomeViewProtocol: class {
     func displayPopulatedTableView(pharmacies: PharmacyResponse)
     func displayAlertController(alertController: UIAlertController)
     func displayUpdatedTableView(pharmacies: [Record]?)
+    func displayLoading(show: Bool)
 }
 
 class HomeContract: Contract {

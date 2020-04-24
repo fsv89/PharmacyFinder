@@ -55,6 +55,7 @@ extension HomePresenter: HomeContract.Presenter {
     }
     
     func doLoadPharmacies() {
+        self.view?.displayLoading(show: true)
         let pharmacyParams = GetPharmacyLocalsWithParams(offset: 0, limit: 30)
         self.getPharmacyLocalsUseCase.addParameters(parameters: pharmacyParams)
         
@@ -63,14 +64,17 @@ extension HomePresenter: HomeContract.Presenter {
             guard let strongSelf = self else { return }
             strongSelf.view?.displayPopulatedTableView(pharmacies: response)
             strongSelf.originalPharmacieList = response.result.records
+            strongSelf.view?.displayLoading(show: false)
         },
         onFailure: { [weak self] (_) in
             guard let strongSelf = self else { return }
             strongSelf.view?.displayAlertController(alertController: strongSelf.genericDataError())
+            strongSelf.view?.displayLoading(show: false)
         },
         onConnectionFailure: { [weak self]  in
             guard let self = self else { return }
             self.view?.displayAlertController(alertController: self.genericDataError())
+            self.view?.displayLoading(show: false)
         })
     }
 }

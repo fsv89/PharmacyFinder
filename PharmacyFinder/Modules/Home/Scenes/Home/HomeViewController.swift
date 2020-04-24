@@ -14,6 +14,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var presenter: HomeContract.Presenter?
     private var pharmacies: [Record]?
+    var loadingView = LoadingView()
     
     
     convenience init() {
@@ -29,6 +30,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         self.setupTableView()
         self.presenter?.doLoadPharmacies()
+        loadingView.setup(inView: self.view)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -59,6 +61,14 @@ extension HomeViewController: HomeContract.View {
     func displayUpdatedTableView(pharmacies: [Record]?) {
         self.pharmacies = pharmacies
         self.tableView.reloadData()
+    }
+    
+    func displayLoading(show: Bool) {
+        if show {
+            self.loadingView.show()
+        } else {
+            self.loadingView.hide()
+        }
     }
 }
 

@@ -54,6 +54,7 @@
 		6948AC1124536F7800976696 /* PharmacyDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6948AC0F24536F7800976696 /* PharmacyDetailViewController.xib */; };
 		6948AC15245375D300976696 /* PharmacyDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6948AC13245375D300976696 /* PharmacyDetailCell.swift */; };
 		6948AC16245375D300976696 /* PharmacyDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6948AC14245375D300976696 /* PharmacyDetailCell.xib */; };
+		6948AC1D2453801700976696 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6948AC1C2453801700976696 /* LoadingView.swift */; };
 		C7D6338643B51BF9C73F7CF9 /* Pods_PharmacyFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CEE4D5683F4153BAC753FF /* Pods_PharmacyFinder.framework */; };
 		D1E7223E1A63C5BAF66AD7C4 /* Pods_PharmacyFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAB94F5D11969C1FA30FE85 /* Pods_PharmacyFinderTests.framework */; };
 /* End PBXBuildFile section */
@@ -122,6 +123,7 @@
 		6948AC0F24536F7800976696 /* PharmacyDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PharmacyDetailViewController.xib; sourceTree = "<group>"; };
 		6948AC13245375D300976696 /* PharmacyDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyDetailCell.swift; sourceTree = "<group>"; };
 		6948AC14245375D300976696 /* PharmacyDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PharmacyDetailCell.xib; sourceTree = "<group>"; };
+		6948AC1C2453801700976696 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		6CDFEFB5D719B471EA5EBD9E /* Pods-PharmacyFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmacyFinder.release.xcconfig"; path = "Target Support Files/Pods-PharmacyFinder/Pods-PharmacyFinder.release.xcconfig"; sourceTree = "<group>"; };
 		7492093F9F00DD5B13D7A726 /* Pods-PharmacyFinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmacyFinderTests.debug.xcconfig"; path = "Target Support Files/Pods-PharmacyFinderTests/Pods-PharmacyFinderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A75187869DDCEE322717145E /* Pods-PharmacyFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmacyFinder.debug.xcconfig"; path = "Target Support Files/Pods-PharmacyFinder/Pods-PharmacyFinder.debug.xcconfig"; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 				691CF29A2450EF75003C97FE /* Extensions */,
 				691CF2BB2451E38D003C97FE /* Storage */,
 				691CF2B024510577003C97FE /* Strings */,
+				6948AC1924537FEC00976696 /* Views */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -265,8 +268,8 @@
 		691CF29D2450F83A003C97FE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				6948ABC52452141F00976696 /* Home */,
 				691CF29E2450F844003C97FE /* Account */,
+				6948ABC52452141F00976696 /* Home */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -414,8 +417,8 @@
 		6948ABD0245214B700976696 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				6948ABF924535C5F00976696 /* PharmacyDetail */,
 				6948ABF824535B7E00976696 /* Home */,
+				6948ABF924535C5F00976696 /* PharmacyDetail */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -561,6 +564,14 @@
 			children = (
 				6948AC13245375D300976696 /* PharmacyDetailCell.swift */,
 				6948AC14245375D300976696 /* PharmacyDetailCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6948AC1924537FEC00976696 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6948AC1C2453801700976696 /* LoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -751,6 +762,7 @@
 				691CF2AA2451046F003C97FE /* RegistrationPresenter.swift in Sources */,
 				691CF2A92451046F003C97FE /* RegistrationContract.swift in Sources */,
 				6948ABF324528D8300976696 /* HomeRepository.swift in Sources */,
+				6948AC1D2453801700976696 /* LoadingView.swift in Sources */,
 				691CF2AE24510494003C97FE /* RegistrationViewController.swift in Sources */,
 				691CF28F2450ED04003C97FE /* LoginContract.swift in Sources */,
 				6948ABCE2452149600976696 /* HomeViewController.swift in Sources */,

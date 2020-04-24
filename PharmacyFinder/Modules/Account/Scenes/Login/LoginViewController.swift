@@ -12,7 +12,6 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var texFieldUsername: UITextField!
     @IBOutlet weak var textFieldPassword: UITextField!
-    
     var presenter: LoginContract.Presenter?
     
     convenience init() {
