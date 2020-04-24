@@ -78,7 +78,11 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let destination = PharmacyDetailViewController()
+        if let pharmacies = self.pharmacies{
+            destination.pharmacy = pharmacies[indexPath.row]
+        }
+        self.navigationController?.pushViewController(destination, animated: true)
     }
 }
 

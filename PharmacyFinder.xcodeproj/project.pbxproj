@@ -48,6 +48,12 @@
 		6948ABF1245287EC00976696 /* PharmacyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6948ABF0245287EC00976696 /* PharmacyEntity.swift */; };
 		6948ABF324528D8300976696 /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6948ABF224528D8300976696 /* HomeRepository.swift */; };
 		6948ABF72452900E00976696 /* GetPharmacyLocalsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6948ABF62452900E00976696 /* GetPharmacyLocalsUseCase.swift */; };
+		6948AC0B24536F5300976696 /* PharmacyDetailContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6948AC0824536F5300976696 /* PharmacyDetailContract.swift */; };
+		6948AC0C24536F5300976696 /* PharmacyDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6948AC0924536F5300976696 /* PharmacyDetailPresenter.swift */; };
+		6948AC1024536F7800976696 /* PharmacyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6948AC0E24536F7800976696 /* PharmacyDetailViewController.swift */; };
+		6948AC1124536F7800976696 /* PharmacyDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6948AC0F24536F7800976696 /* PharmacyDetailViewController.xib */; };
+		6948AC15245375D300976696 /* PharmacyDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6948AC13245375D300976696 /* PharmacyDetailCell.swift */; };
+		6948AC16245375D300976696 /* PharmacyDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6948AC14245375D300976696 /* PharmacyDetailCell.xib */; };
 		C7D6338643B51BF9C73F7CF9 /* Pods_PharmacyFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CEE4D5683F4153BAC753FF /* Pods_PharmacyFinder.framework */; };
 		D1E7223E1A63C5BAF66AD7C4 /* Pods_PharmacyFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAB94F5D11969C1FA30FE85 /* Pods_PharmacyFinderTests.framework */; };
 /* End PBXBuildFile section */
@@ -110,6 +116,12 @@
 		6948ABF0245287EC00976696 /* PharmacyEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyEntity.swift; sourceTree = "<group>"; };
 		6948ABF224528D8300976696 /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
 		6948ABF62452900E00976696 /* GetPharmacyLocalsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPharmacyLocalsUseCase.swift; sourceTree = "<group>"; };
+		6948AC0824536F5300976696 /* PharmacyDetailContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyDetailContract.swift; sourceTree = "<group>"; };
+		6948AC0924536F5300976696 /* PharmacyDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyDetailPresenter.swift; sourceTree = "<group>"; };
+		6948AC0E24536F7800976696 /* PharmacyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyDetailViewController.swift; sourceTree = "<group>"; };
+		6948AC0F24536F7800976696 /* PharmacyDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PharmacyDetailViewController.xib; sourceTree = "<group>"; };
+		6948AC13245375D300976696 /* PharmacyDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyDetailCell.swift; sourceTree = "<group>"; };
+		6948AC14245375D300976696 /* PharmacyDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PharmacyDetailCell.xib; sourceTree = "<group>"; };
 		6CDFEFB5D719B471EA5EBD9E /* Pods-PharmacyFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmacyFinder.release.xcconfig"; path = "Target Support Files/Pods-PharmacyFinder/Pods-PharmacyFinder.release.xcconfig"; sourceTree = "<group>"; };
 		7492093F9F00DD5B13D7A726 /* Pods-PharmacyFinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmacyFinderTests.debug.xcconfig"; path = "Target Support Files/Pods-PharmacyFinderTests/Pods-PharmacyFinderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A75187869DDCEE322717145E /* Pods-PharmacyFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmacyFinder.debug.xcconfig"; path = "Target Support Files/Pods-PharmacyFinder/Pods-PharmacyFinder.debug.xcconfig"; sourceTree = "<group>"; };
@@ -402,11 +414,8 @@
 		6948ABD0245214B700976696 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				6948ABD12452415D00976696 /* Views */,
-				6948ABC62452146E00976696 /* HomeContract.swift */,
-				6948ABC72452146E00976696 /* HomePresenter.swift */,
-				6948ABCC2452149600976696 /* HomeViewController.swift */,
-				6948ABCD2452149600976696 /* HomeViewController.xib */,
+				6948ABF924535C5F00976696 /* PharmacyDetail */,
+				6948ABF824535B7E00976696 /* Home */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -523,6 +532,39 @@
 			path = UseCases;
 			sourceTree = "<group>";
 		};
+		6948ABF824535B7E00976696 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6948ABD12452415D00976696 /* Views */,
+				6948ABC62452146E00976696 /* HomeContract.swift */,
+				6948ABC72452146E00976696 /* HomePresenter.swift */,
+				6948ABCC2452149600976696 /* HomeViewController.swift */,
+				6948ABCD2452149600976696 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6948ABF924535C5F00976696 /* PharmacyDetail */ = {
+			isa = PBXGroup;
+			children = (
+				6948AC12245375B100976696 /* Views */,
+				6948AC0824536F5300976696 /* PharmacyDetailContract.swift */,
+				6948AC0924536F5300976696 /* PharmacyDetailPresenter.swift */,
+				6948AC0E24536F7800976696 /* PharmacyDetailViewController.swift */,
+				6948AC0F24536F7800976696 /* PharmacyDetailViewController.xib */,
+			);
+			path = PharmacyDetail;
+			sourceTree = "<group>";
+		};
+		6948AC12245375B100976696 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6948AC13245375D300976696 /* PharmacyDetailCell.swift */,
+				6948AC14245375D300976696 /* PharmacyDetailCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -608,11 +650,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				691CF2952450ED4C003C97FE /* LoginViewController.xib in Resources */,
+				6948AC1124536F7800976696 /* PharmacyDetailViewController.xib in Resources */,
 				691CF2AF24510494003C97FE /* RegistrationViewController.xib in Resources */,
 				6948ABD5245243F500976696 /* PharmacyCell.xib in Resources */,
 				6948ABCF2452149600976696 /* HomeViewController.xib in Resources */,
 				691CF2752450ECBF003C97FE /* LaunchScreen.storyboard in Resources */,
 				691CF2722450ECBF003C97FE /* Assets.xcassets in Resources */,
+				6948AC16245375D300976696 /* PharmacyDetailCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -694,6 +738,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6948AC0C24536F5300976696 /* PharmacyDetailPresenter.swift in Sources */,
+				6948AC15245375D300976696 /* PharmacyDetailCell.swift in Sources */,
 				6948ABCA2452146E00976696 /* HomePresenter.swift in Sources */,
 				6948ABF1245287EC00976696 /* PharmacyEntity.swift in Sources */,
 				6948ABED2452837C00976696 /* BaseRemoteDataSource.swift in Sources */,
@@ -722,7 +768,9 @@
 				691CF2D12451FEFE003C97FE /* LoginWithUsernameUseCase.swift in Sources */,
 				6948ABEF2452860100976696 /* DataSourceError.swift in Sources */,
 				691CF26B2450ECBB003C97FE /* SceneDelegate.swift in Sources */,
+				6948AC0B24536F5300976696 /* PharmacyDetailContract.swift in Sources */,
 				691CF2C02451E7FA003C97FE /* StorageKeyChain.swift in Sources */,
+				6948AC1024536F7800976696 /* PharmacyDetailViewController.swift in Sources */,
 				691CF2B2245105CB003C97FE /* StringConstants.swift in Sources */,
 				691CF2902450ED04003C97FE /* LoginPresenter.swift in Sources */,
 				6948ABE12452555200976696 /* HomeRemoteDataSource.swift in Sources */,
