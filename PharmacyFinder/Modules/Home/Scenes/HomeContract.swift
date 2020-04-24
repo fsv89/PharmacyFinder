@@ -10,11 +10,13 @@ import UIKit
 
 protocol HomePresenterProtocol: class {
     func doLoadPharmacies()
+    func doFilterPharmacies(listToFilter: [Record]?)
 }
 
 protocol HomeViewProtocol: class {
     func displayPopulatedTableView(pharmacies: PharmacyResponse)
-    func displayDataError(alertController: UIAlertController)
+    func displayAlertController(alertController: UIAlertController)
+    func displayUpdatedTableView(pharmacies: [Record]?)
 }
 
 class HomeContract: Contract {

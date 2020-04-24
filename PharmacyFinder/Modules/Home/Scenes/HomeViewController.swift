@@ -15,6 +15,7 @@ class HomeViewController: UIViewController {
     var presenter: HomeContract.Presenter?
     private var pharmacies: [Record]?
     
+    
     convenience init() {
         self.init(nibName: "HomeViewController", bundle: nil)
         setup()
@@ -33,10 +34,15 @@ class HomeViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = false
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(searchTapped))
     }
     
     private func setupTableView() {
         self.tableView.register(PharmacyCell.nib, forCellReuseIdentifier: PharmacyCell.identifier)
+    }
+    
+    @objc func searchTapped() {
+        self.presenter?.doFilterPharmacies(listToFilter: pharmacies)
     }
 }
 
@@ -46,8 +52,13 @@ extension HomeViewController: HomeContract.View {
         self.tableView.reloadData()
     }
     
-    func displayDataError(alertController: UIAlertController) {
+    func displayAlertController(alertController: UIAlertController) {
         self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func displayUpdatedTableView(pharmacies: [Record]?) {
+        self.pharmacies = pharmacies
+        self.tableView.reloadData()
     }
 }
 
